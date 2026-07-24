@@ -1,0 +1,19 @@
+project_id  = "my-project-id"
+name_prefix = "demo"
+region      = "us-central1"
+
+vpcs = [
+  {
+    name = "app"
+    subnets = [
+      { name = "subnet-a", cidr = "10.10.0.0/24", region = "us-central1" },
+      { name = "subnet-b", cidr = "10.10.1.0/24", region = "us-east1" },
+    ]
+  },
+  {
+    name = "data"
+    subnets = [
+      { name = "subnet-a", cidr = "10.20.0.0/24" },
+    ]
+  },
+]
